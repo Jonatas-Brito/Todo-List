@@ -27,9 +27,6 @@ class HomePage extends StatefulWidget {
 
   HomePage() {
     items = [];
-    // items.add(Item(title: "Item 1", done: false));
-    // items.add(Item(title: "Item 2", done: true));
-    // items.add(Item(title: "Item 3", done: false));
   }
   @override
   _HomePageState createState() => _HomePageState();
@@ -108,9 +105,7 @@ class _HomePageState extends State<HomePage> {
               title: Text(item.title),
               value: item.done,
               onChanged: (value) {
-                // Metodo para selecionar
                 setState(() {
-                  // Atualiza a tela usando o build somente dentro de onde é idicado
                   item.done = value;
                   save();
                 });
